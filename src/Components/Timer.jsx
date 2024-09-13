@@ -130,26 +130,7 @@ const Timer = ({ onTimeUpdate, staticMinutes = null, staticSeconds = null }) => 
 
     return (
         <div className='bg-slate-100 flex items-center justify-center w-screen h-screen'>
-            <div className="timer-container">
-                <div className="scrollable !mx-0" ref={minutesRef}>
-                    {generateItems(totalItems)}
-                </div>
-                <div className="scrollable !mx-0" ref={secondsRef}>
-                    {generateItems(totalItems)}
-                </div>
-                <div className="flex items-center justify-between h-[50px] absolute text-white bg-black w-full left-0 top-1/2 -translate-y-1/2">
-                    <div className="minutes flex-1 flex items-center justify-end">
-                        <div className="center-content">
-                            <span>{selectedMinutes}</span> <span className='text-xs text-slate-400 pr-1'>Min</span>
-                        </div>
-                    </div>
-                    <div className="seconds flex-1 flex items-center justify-end">
-                        <div className="center-content">
-                            <span>{selectedSeconds}</span> <span className='text-xs text-slate-400 pr-1'>Sec</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     );
 };
