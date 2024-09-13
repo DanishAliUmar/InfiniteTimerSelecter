@@ -1,0 +1,51 @@
+.timer-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scrollable {
+    height: 200px;
+    overflow-y: auto;
+    width: 60px; /* Width of the scrollable areas */
+    border: 1px solid #ccc;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .scroll-item {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .center-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px; /* Height of the center box */
+    width: 60px; /* Width of the center box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000; /* Border style for visibility */
+    /* background: #f0f0f0; */
+     /* Background color */
+    z-index: 2; /* Ensure it’s above the scrollable areas */
+    text-align: center;
+  }
+  
+  .center-box.minutes {
+    left: calc(6.5%); /* Adjust positioning relative to the container */
+  }
+  
+  .center-box.seconds {
+    right: calc(6.4%); /* Adjust positioning relative to the container */
+  }
+  
+  .center-content {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

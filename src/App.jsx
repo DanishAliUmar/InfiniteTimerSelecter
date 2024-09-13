@@ -1,10 +1,15 @@
-import './App.css'
+import Timer from './Components/Timer';
 
-function App() {
+const App = () => {
+    const handleTimeUpdate = (minutes, seconds) => {
+        console.log('Selected Time:', minutes, seconds);
+    };
 
-  return (
-    <div className="text-red-400">test</div>
-  )
-}
+    return (
+        <div>
+            <Timer onTimeUpdate={handleTimeUpdate} />
+        </div>
+    );
+};
 
-export default App
+export default App;
