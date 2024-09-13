@@ -145,7 +145,7 @@ const Timer = ({ onTimeUpdate, staticMinutes = null, staticSeconds = null }) => 
                     </div>
                     <div className="seconds flex-1 flex items-center justify-end">
                         <div className="center-content">
-                            <span>{selectedSeconds + 1}</span> <span className='text-xs text-slate-400 pr-1'>Sec</span>
+                            <span>{selectedSeconds}</span> <span className='text-xs text-slate-400 pr-1'>Sec</span>
                         </div>
                     </div>
                 </div>
