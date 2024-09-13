@@ -10,7 +10,7 @@ const Timer = ({ onTimeUpdate, staticMinutes = null, staticSeconds = null }) => 
 
     const totalItems = 60; // Total number of minutes/seconds (0 to 59)
     const itemHeight = 50; // Height of each scroll item
-    const bufferItems = 20; // Extra items at the top and bottom for infinite scroll illusion
+    const bufferItems = 10; // Extra items at the top and bottom for infinite scroll illusion
 
     // Function to handle magnetic scroll effect
     const handleMagneticScroll = (ref, setter) => {
