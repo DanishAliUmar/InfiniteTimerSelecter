@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      Hello World
-    </>
+    <div className="text-red-400">test</div>
   )
 }
 
